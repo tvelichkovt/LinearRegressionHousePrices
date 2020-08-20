@@ -68,7 +68,6 @@ df = df._get_numeric_data() #This line will drop non-numeric cols
 vif = pd.DataFrame()
 vif["VIF Factor"] = [variance_inflation_factor(X, i) for i in range(X.shape[1])]
 
-print(vif)
 
 
 
