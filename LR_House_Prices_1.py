@@ -1,7 +1,10 @@
 # === Predicting Boston House-Prices ===
 
 # 1. Load Data
-
+import pandas as pd
+from sklearn import datasets, linear_model
+from sklearn.model_selection import train_test_split
+from matplotlib import pyplot as plt
 from sklearn.datasets import load_boston
 import numpy as np
 
