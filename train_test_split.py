@@ -87,7 +87,7 @@ plt.scatter(y, predictions)
 accuracy = metrics.r2_score(y, predictions)
 print('Cross-Predicted Accuracy:', accuracy)
 
-https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6
+#https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6
 
 
 
