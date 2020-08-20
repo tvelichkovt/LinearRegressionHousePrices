@@ -1,7 +1,7 @@
 # Detecting Multicollinearity using VIF
 import pandas as pd
 
-df=pd.read_csv('salary.csv') ; print(df.head())
+df = pd.read_csv('salary_small.csv') ; print(df.head())
 
 
 
@@ -19,10 +19,10 @@ def calc_vif(X):
 
 # calc_vif(df)
 
-print(calc_vif(df))
+print(calc_vif(df)) ; #experience and age are over-correlated >> 5 !!!
 
 # FIX calc_vif(df)
 
 X = df.drop(['exp','age'],axis=1)
 print(calc_vif(X))
-df.to_csv('out.csv', sep='\t')
+# df.to_csv('out.csv')
