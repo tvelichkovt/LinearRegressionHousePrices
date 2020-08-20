@@ -9,13 +9,11 @@ from matplotlib import pyplot as plt
 
 # Load the Diabetes dataset, https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 
-#columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
-#diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
-#df = pd.DataFrame(diabetes.data, columns=columns) # load the dataset as a pandas data frame
-#y = diabetes.target # define the target variable (dependent variable) as y
+columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
+diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
+df = pd.DataFrame(diabetes.data, columns=columns) # load the dataset as a pandas data frame
+y = diabetes.target # define the target variable (dependent variable) as y
 
-df = pd.read_csv('diabetes.csv') ; print(df.head())
-y = df.y
 
 
 # create training and testing vars
