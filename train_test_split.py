@@ -3,10 +3,10 @@ import pandas as pd
 from sklearn import datasets, linear_model
 from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
-from sklearn.datasets import load_boston
-import numpy as np
 
-# Load the Diabetes dataset
+# Load the Diabetes dataset, https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
+https://www.programcreek.com/python/example/85913/sklearn.datasets.load_diabetes
+
 columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
 diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
 df = pd.DataFrame(diabetes.data, columns=columns) # load the dataset as a pandas data frame
