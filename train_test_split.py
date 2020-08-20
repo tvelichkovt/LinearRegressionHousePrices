@@ -1,16 +1,22 @@
+# https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6
+
 #train_test_split
 import pandas as pd
+import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
 
 # Load the Diabetes dataset, https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
-#https://www.programcreek.com/python/example/85913/sklearn.datasets.load_diabetes
 
-columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
-diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
-df = pd.DataFrame(diabetes.data, columns=columns) # load the dataset as a pandas data frame
-y = diabetes.target # define the target variable (dependent variable) as y
+#columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
+#diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
+#df = pd.DataFrame(diabetes.data, columns=columns) # load the dataset as a pandas data frame
+#y = diabetes.target # define the target variable (dependent variable) as y
+
+df = pd.read_csv('diabetes.csv') ; print(df.head())
+y = df.y
+
 
 # create training and testing vars
 X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.2)
