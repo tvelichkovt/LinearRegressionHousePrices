@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
 
 # Load the Diabetes dataset, https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
-https://www.programcreek.com/python/example/85913/sklearn.datasets.load_diabetes
+#https://www.programcreek.com/python/example/85913/sklearn.datasets.load_diabetes
 
 columns = 'age sex bmi map tc ldl hdl tch ltg glu'.split() # Declare the columns names
 diabetes = datasets.load_diabetes() # Call the diabetes dataset from sklearn
